@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEGWORK | Relatos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU -->
+    <header>
+        <div class="logo"><span>SEG</span>WORK</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="direitos.html">Direitos</a></li>
+                <li><a href="relatos.html">Relatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER RELATOS -->
+    <section class="page-hero relatos-hero">
+        <div class="page-hero-content">
+            <span class="tag">Relatos • Experiências • Conscientização</span>
+
+            <h1>Relatos anônimos sobre segurança no trabalho</h1>
+
+            <p>
+                Um espaço para compartilhar experiências reais, aprendizados, situações de risco,
+                boas práticas e histórias de conscientização no ambiente profissional.
+            </p>
+
+            <a href="#mural-relatos" class="botao-link btn-yellow">Ler relatos</a>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- INTRODUÇÃO -->
+        <section class="info-intro">
+            <div class="info-intro-card">
+                <h2>Compartilhar experiências também é uma forma de prevenção.</h2>
+
+                <p>
+                    Nesta página, os relatos são anônimos e têm o objetivo de conscientizar sobre
+                    a importância da segurança do trabalho, do uso correto dos EPIs, da comunicação
+                    entre equipes e da prevenção de acidentes.
+                </p>
+            </div>
+        </section>
+
+        <!-- ÁREA PRINCIPAL DOS RELATOS -->
+        <section class="relatos-area" id="mural-relatos">
+
+            <div class="relatos-cabecalho">
+                <span class="mini-titulo">Mural anônimo</span>
+
+                <h2>Experiências compartilhadas</h2>
+
+                <p>
+                    Leia relatos de situações positivas, aprendizados, riscos percebidos e acidentes
+                    que reforçam a importância da segurança no trabalho.
+                </p>
+            </div>
+
+           <!-- RELATOS DE OUTRAS PESSOAS -->
+<div class="relatos-publicados">
+
+    <div class="relatos-publicados-titulo">
+        <h3>Relatos compartilhados por outras pessoas</h3>
+        <p>
+            Veja algumas experiências anônimas sobre segurança no trabalho.
+            Novos relatos publicados aparecerão nesta área.
+        </p>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="relatos-filtros">
+        <button class="filtro-btn ativo" onclick="filtrarRelatos('Todos', this)">Todos</button>
+        <button class="filtro-btn" onclick="filtrarRelatos('Experiência positiva', this)">Positivos</button>
+        <button class="filtro-btn" onclick="filtrarRelatos('Uso correto de EPI', this)">EPIs</button>
+        <button class="filtro-btn" onclick="filtrarRelatos('Situação de risco', this)">Riscos</button>
+        <button class="filtro-btn" onclick="filtrarRelatos('Acidente de trabalho', this)">Acidentes</button>
+        <button class="filtro-btn" onclick="filtrarRelatos('Aprendizado', this)">Aprendizados</button>
+    </div>
+
+    <!-- LISTA DE RELATOS -->
+    <div class="relatos-lista" id="listaRelatos">
+        <!-- Os relatos aparecem aqui pelo JavaScript -->
+    </div>
+
+</div>
+
+<!-- FORMULÁRIO -->
+<div class="relato-form-card">
+
+    <div class="form-titulo">
+        <h3>Compartilhe seu relato</h3>
+        <p>
+            Não é necessário informar nome. Escreva com respeito e evite dados pessoais
+            de empresas ou pessoas.
+        </p>
+    </div>
+
+    <form id="formRelato">
+
+        <div class="campo-grupo">
+            <label for="tipoRelato">Tipo de relato</label>
+
+            <select id="tipoRelato" required>
+                <option value="">Selecione uma opção</option>
+                <option value="Experiência positiva">Experiência positiva</option>
+                <option value="Uso correto de EPI">Uso correto de EPI</option>
+                <option value="Situação de risco">Situação de risco</option>
+                <option value="Acidente de trabalho">Acidente de trabalho</option>
+                <option value="Aprendizado">Aprendizado</option>
+            </select>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="tituloRelato">Título do relato</label>
+
+            <input
+                type="text"
+                id="tituloRelato"
+                placeholder="Ex: O capacete evitou um acidente grave"
+                maxlength="80"
+                required
+            >
+        </div>
+
+        <div class="campo-grupo">
+            <label for="textoRelato">Relato</label>
+
+            <textarea
+                id="textoRelato"
+                placeholder="Conte o ocorrido de forma anônima..."
+                maxlength="700"
+                required
+            ></textarea>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="sentimentoRelato">Como você classificaria essa experiência?</label>
+
+            <select id="sentimentoRelato" required>
+                <option value="">Selecione uma opção</option>
+                <option value="Conscientização">Conscientização</option>
+                <option value="Alerta">Alerta</option>
+                <option value="Aprendizado">Aprendizado</option>
+                <option value="Gratidão">Gratidão</option>
+                <option value="Prevenção">Prevenção</option>
+            </select>
+        </div>
+
+        <button type="submit" class="botao-link btn-yellow">
+            Publicar relato anônimo
+        </button>
+
+    </form>
+</div>
+
+        </section>
+
+        <!-- AVISO FINAL -->
+        <section class="relatos-aviso">
+            <div>
+                <span class="mini-titulo">Importante</span>
+
+                <h2>Este espaço é educativo e anônimo.</h2>
+
+                <p>
+                    Os relatos publicados têm finalidade de conscientização. Em situações reais de acidente,
+                    risco grave ou violação de direitos, procure orientação profissional, comunique a empresa
+                    e acione os órgãos responsáveis quando necessário.
+                </p>
+            </div>
+
+            <a href="direitos.html" class="botao-link btn-yellow">Ver direitos</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Segurança do Trabalho | Projeto Extensionista</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

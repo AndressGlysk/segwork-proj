@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEGWORK | Direitos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU -->
+    <header>
+        <div class="logo"><span>SEG</span>WORK</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="direitos.html">Direitos</a></li>
+                <li><a href="relatos.html">Relatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER DIREITOS -->
+    <section class="page-hero direitos-hero">
+        <div class="page-hero-content">
+            <span class="tag">Direitos • Proteção • Segurança</span>
+
+            <h1>Direitos Trabalhistas na Segurança do Trabalho</h1>
+
+            <p>
+                Os trabalhadores possuem direitos importantes para garantir sua saúde,
+                proteção e segurança durante o trabalho.
+            </p>
+
+            <a href="#direitos" class="botao-link btn-yellow">Ver direitos</a>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- INTRODUÇÃO -->
+        <section class="info-intro">
+            <div class="info-intro-card">
+                <h2>Conhecer seus direitos é uma forma de proteção.</h2>
+
+                <p>
+                    A legislação trabalhista e as Normas Regulamentadoras ajudam a garantir
+                    condições adequadas de trabalho, fornecimento de equipamentos de proteção,
+                    exames médicos, prevenção de acidentes e medidas de segurança.
+                </p>
+            </div>
+        </section>
+
+        <!-- CARDS DE DIREITOS -->
+        <section class="direitos-section" id="direitos">
+
+            <div class="direitos-titulo">
+                <span class="mini-titulo">Clique nos cards</span>
+                <h2>Principais direitos relacionados à segurança do trabalho</h2>
+                <p>
+                    Clique em cada item para visualizar a explicação sobre o direito do trabalhador.
+                </p>
+            </div>
+
+            <div class="direitos-grid">
+
+                <div class="direito-card" onclick="abrirDireito(this)">
+                    <div class="direito-frente">
+                        <h3>Equipamentos de Proteção Individual (EPIs)</h3>
+                        <span>CLT, Art. 166 e NR-6</span>
+                    </div>
+
+                    <div class="direito-info">
+                        <p>
+                            A empresa deve fornecer gratuitamente os Equipamentos de Proteção Individual
+                            necessários para cada função, como capacetes, luvas, máscaras, óculos,
+                            botas e protetores auriculares. Esses equipamentos devem estar em boas
+                            condições de uso e adequados ao risco da atividade.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="direito-card" onclick="abrirDireito(this)">
+                    <div class="direito-frente">
+                        <h3>Exames Médicos Ocupacionais</h3>
+                        <span>CLT, Art. 168 e NR-7</span>
+                    </div>
+
+                    <div class="direito-info">
+                        <p>
+                            O trabalhador tem direito a exames médicos relacionados ao trabalho,
+                            como exame admissional, periódico, de retorno ao trabalho, mudança de função
+                            e demissional, conforme a atividade exercida e os riscos existentes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="direito-card" onclick="abrirDireito(this)">
+                    <div class="direito-frente">
+                        <h3>Afastamento e Benefício pelo INSS</h3>
+                        <span>Lei nº 8.213/1991</span>
+                    </div>
+
+                    <div class="direito-info">
+                        <p>
+                            Quando o acidente ou doença ocupacional impede o trabalhador de exercer
+                            suas funções, ele pode ter direito ao afastamento e ao benefício previdenciário,
+                            conforme avaliação médica e regras do INSS.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="direito-card" onclick="abrirDireito(this)">
+                    <div class="direito-frente">
+                        <h3>Adicional de Insalubridade</h3>
+                        <span>CLT, Arts. 189 a 192 e NR-15</span>
+                    </div>
+
+                    <div class="direito-info">
+                        <p>
+                            O adicional de insalubridade pode ser devido quando o trabalhador fica exposto
+                            a agentes prejudiciais à saúde, como ruído excessivo, calor, produtos químicos,
+                            poeiras, radiação ou agentes biológicos acima dos limites permitidos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="direito-card" onclick="abrirDireito(this)">
+                    <div class="direito-frente">
+                        <h3>Adicional de Periculosidade</h3>
+                        <span>CLT, Art. 193 e NR-16</span>
+                    </div>
+
+                    <div class="direito-info">
+                        <p>
+                            O adicional de periculosidade pode ser devido quando o trabalhador exerce
+                            atividades com risco elevado, como contato com inflamáveis, explosivos,
+                            energia elétrica, segurança pessoal ou patrimonial e outras situações
+                            perigosas previstas em lei.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="direito-card" onclick="abrirDireito(this)">
+                    <div class="direito-frente">
+                        <h3>Prevenção de Acidentes e Ambiente Seguro</h3>
+                        <span>CLT, Arts. 157 e 158</span>
+                    </div>
+
+                    <div class="direito-info">
+                        <p>
+                            A empresa deve cumprir e fazer cumprir as normas de segurança e medicina
+                            do trabalho, além de orientar os trabalhadores sobre os cuidados necessários.
+                            O trabalhador também deve colaborar com as medidas de segurança e utilizar
+                            corretamente os equipamentos fornecidos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="direito-card" onclick="abrirDireito(this)">
+                    <div class="direito-frente">
+                        <h3>Comunicação de Acidente de Trabalho (CAT)</h3>
+                        <span>Lei nº 8.213/1991, Art. 22</span>
+                    </div>
+
+                    <div class="direito-info">
+                        <p>
+                            Quando ocorre um acidente de trabalho, a empresa deve comunicar o ocorrido
+                            por meio da CAT. Esse registro é importante para comprovar o acidente e
+                            garantir que o trabalhador possa buscar seus direitos junto ao INSS.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="direito-card" onclick="abrirDireito(this)">
+                    <div class="direito-frente">
+                        <h3>Estabilidade Após Acidente de Trabalho</h3>
+                        <span>Lei nº 8.213/1991, Art. 118</span>
+                    </div>
+
+                    <div class="direito-info">
+                        <p>
+                            Em alguns casos, após sofrer acidente de trabalho e receber benefício
+                            acidentário, o trabalhador pode ter direito à estabilidade no emprego
+                            por 12 meses após o retorno às atividades.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="direito-card" onclick="abrirDireito(this)">
+                    <div class="direito-frente">
+                        <h3>Direito de Recusa em Situação de Risco Grave</h3>
+                        <span>NR-1, item 1.4.3</span>
+                    </div>
+
+                    <div class="direito-info">
+                        <p>
+                            Quando o trabalhador identificar uma situação de risco grave e imediato
+                            à sua vida ou saúde, ele pode interromper suas atividades e comunicar
+                            imediatamente o superior responsável. A empresa não pode exigir o retorno
+                            ao trabalho enquanto as medidas corretivas não forem tomadas.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHAMADA FINAL -->
+        <section class="direitos-alerta">
+            <div>
+                <span class="mini-titulo">Atenção</span>
+                <h2>Informação ajuda a prevenir acidentes.</h2>
+                <p>
+                    Conhecer os direitos e deveres no ambiente de trabalho contribui para uma rotina
+                    mais segura, responsável e consciente.
+                </p>
+            </div>
+
+            <a href="informacoes.html" class="botao-link btn-yellow">Ver informações</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Segurança do Trabalho | Projeto Extensionista</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
